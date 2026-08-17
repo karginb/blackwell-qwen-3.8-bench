@@ -1,0 +1,213 @@
+{
+  "model": "models/Qwen3.8-27B-UD-IQ2_XXS.gguf",
+  "reps": 5,
+  "discard": 2,
+  "tokens": 256,
+  "prompt": "Write a Python function that performs binary search on a sorted list, then explain step by step how it works, why its complexity is O(log n), and what happens when the target value is absent from the list.",
+  "results": [
+    {
+      "name": "ngl52-c4096",
+      "flags": "-ngl 52 -fa on -c 4096",
+      "ok": true,
+      "error": "",
+      "load_s": 5.0,
+      "decode_tps": [
+        11.428094073560715,
+        9.92281721466365,
+        9.878798378606382,
+        9.865267526711662,
+        9.785265232492145
+      ],
+      "prefill_tps": [
+        66.14926658923613,
+        51.509220150406925,
+        54.522723295911305,
+        56.1058129536579,
+        56.0202923738143
+      ],
+      "decode_median": 9.865,
+      "decode_peak": 11.428,
+      "boost_drop_pct": 15.84,
+      "spread_pct": 0.47,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1537,
+        1845,
+        1530,
+        1537,
+        1537
+      ],
+      "temps": [
+        71,
+        76,
+        75,
+        74,
+        76
+      ],
+      "vram_mib": [
+        7550,
+        7550,
+        7550,
+        7550,
+        7550
+      ]
+    },
+    {
+      "name": "ngl54-c4096",
+      "flags": "-ngl 54 -fa on -c 4096",
+      "ok": false,
+      "error": "[Inferior 1 (process 47797) detached]",
+      "load_s": 0.0,
+      "decode_tps": [],
+      "prefill_tps": [],
+      "decode_median": 0.0,
+      "decode_peak": 0.0,
+      "boost_drop_pct": 0.0,
+      "spread_pct": 0.0,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [],
+      "temps": [],
+      "vram_mib": []
+    },
+    {
+      "name": "ngl55-c4096",
+      "flags": "-ngl 55 -fa on -c 4096",
+      "ok": false,
+      "error": "0.02.027.511 E ggml_backend_cuda_buffer_type_alloc_buffer: allocating 198.20 MiB on device 0: cudaMalloc failed: out of memory",
+      "load_s": 0.0,
+      "decode_tps": [],
+      "prefill_tps": [],
+      "decode_median": 0.0,
+      "decode_peak": 0.0,
+      "boost_drop_pct": 0.0,
+      "spread_pct": 0.0,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [],
+      "temps": [],
+      "vram_mib": []
+    },
+    {
+      "name": "fit-c4096",
+      "flags": "-fa on -c 4096 -fitt 256",
+      "ok": true,
+      "error": "",
+      "load_s": 5.0,
+      "decode_tps": [
+        9.740347916824152,
+        9.61658415008931,
+        8.386665951004506,
+        9.2508105886737,
+        8.893949488017181
+      ],
+      "prefill_tps": [
+        55.4503145838196,
+        46.9851384914274,
+        55.12502483831061,
+        54.02994264030508,
+        53.085174545288446
+      ],
+      "decode_median": 8.894,
+      "decode_peak": 9.74,
+      "boost_drop_pct": 9.52,
+      "spread_pct": 4.86,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1537,
+        1957,
+        1777,
+        1845,
+        1830
+      ],
+      "temps": [
+        70,
+        76,
+        78,
+        81,
+        82
+      ],
+      "vram_mib": [
+        6908,
+        6908,
+        6908,
+        6908,
+        6908
+      ]
+    },
+    {
+      "name": "ngl56-c2048",
+      "flags": "-ngl 56 -fa on -c 2048",
+      "ok": false,
+      "error": "0.01.933.737 E ggml_backend_cuda_buffer_type_alloc_buffer: allocating 171.45 MiB on device 0: cudaMalloc failed: out of memory",
+      "load_s": 0.0,
+      "decode_tps": [],
+      "prefill_tps": [],
+      "decode_median": 0.0,
+      "decode_peak": 0.0,
+      "boost_drop_pct": 0.0,
+      "spread_pct": 0.0,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [],
+      "temps": [],
+      "vram_mib": []
+    },
+    {
+      "name": "ngl50-c8192",
+      "flags": "-ngl 50 -fa on -c 8192",
+      "ok": true,
+      "error": "",
+      "load_s": 3.0,
+      "decode_tps": [
+        10.800102054611415,
+        8.811571895273742,
+        9.010086208504843,
+        8.663061632655543,
+        8.680118831167196
+      ],
+      "prefill_tps": [
+        55.24556654328491,
+        60.50381385087076,
+        52.46391275861354,
+        52.361695106373396,
+        49.36576472735747
+      ],
+      "decode_median": 8.68,
+      "decode_peak": 10.8,
+      "boost_drop_pct": 24.42,
+      "spread_pct": 2.0,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1785,
+        1537,
+        1537,
+        1530,
+        1530
+      ],
+      "temps": [
+        78,
+        75,
+        76,
+        76,
+        77
+      ],
+      "vram_mib": [
+        7460,
+        7460,
+        7460,
+        7460,
+        7460
+      ]
+    }
+  ]
+}

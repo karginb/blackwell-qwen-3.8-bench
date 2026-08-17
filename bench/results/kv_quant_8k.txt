@@ -1,0 +1,40 @@
+───────── kv=f16  ngl=50 ─────────
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+| qwen35 27B Q4_K - Small        |   8.38 GiB |    27.32 B | CUDA       |  50 |   1 |    tg64 @ d8192 |         10.25 ± 0.14 |
+
+build: unknown (0)
+───────── kv=f16  ngl=52 ─────────
+#15 0x00007e1041229e40 in __libc_start_main_impl (main=0x5c60a5c0c260 <main>, argc=19, argv=0x7ffd0469e9d8, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffd0469e9c8) at ../csu/libc-start.c:392
+392	../csu/libc-start.c: No such file or directory.
+#16 0x00005c60a5c0c295 in _start ()
+[Inferior 1 (process 33652) detached]
+───────── kv=f16  ngl=54 ─────────
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to create context with model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+───────── kv=f16  ngl=56 ─────────
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to create context with model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+───────── kv=q8_0  ngl=50 ─────────
+| ------------------------------ | ---------: | ---------: | ---------- | --: | -----: | -----: | --: | --------------: | -------------------: |
+| qwen35 27B Q4_K - Small        |   8.38 GiB |    27.32 B | CUDA       |  50 |   q8_0 |   q8_0 |   1 |    tg64 @ d8192 |          9.82 ± 0.25 |
+
+build: unknown (0)
+───────── kv=q8_0  ngl=52 ─────────
+| ------------------------------ | ---------: | ---------: | ---------- | --: | -----: | -----: | --: | --------------: | -------------------: |
+| qwen35 27B Q4_K - Small        |   8.38 GiB |    27.32 B | CUDA       |  52 |   q8_0 |   q8_0 |   1 |    tg64 @ d8192 |         10.48 ± 0.11 |
+
+build: unknown (0)
+───────── kv=q8_0  ngl=54 ─────────
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to create context with model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl | type_k | type_v |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | -----: | -----: | --: | --------------: | -------------------: |
+───────── kv=q8_0  ngl=56 ─────────
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to create context with model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl | type_k | type_v |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | -----: | -----: | --: | --------------: | -------------------: |

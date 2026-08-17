@@ -1,0 +1,8 @@
+ngl=44  mtp=off  → [ Prompt: 26.3 t/s | Generation: 9.6 t/s ]
+ngl=44  mtp=on   → [ Prompt: 22.9 t/s | Generation: 8.8 t/s ]
+ngl=46  mtp=off  → [ Prompt: 24.6 t/s | Generation: 9.3 t/s ]
+ngl=46  mtp=on   → [ Prompt: 23.0 t/s | Generation: 8.3 t/s ]
+ngl=48  mtp=off  → [ Prompt: 24.2 t/s | Generation: 8.7 t/s ]
+ngl=48  mtp=on   → [ Prompt: 22.9 t/s | Generation: 9.1 t/s ]
+ngl=50  mtp=off  → [ Prompt: 27.9 t/s | Generation: 10.4 t/s ]
+ngl=50  mtp=on   → [ Prompt: 25.3 t/s | Generation: 10.4 t/s ]

@@ -1,0 +1,36 @@
+───────── ngl = 56 ─────────
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+| qwen35 27B Q4_K - Small        |   8.38 GiB |    27.32 B | CUDA       |  56 |   1 |           pp256 |       425.60 ± 33.64 |
+| qwen35 27B Q4_K - Small        |   8.38 GiB |    27.32 B | CUDA       |  56 |   1 |            tg64 |         15.82 ± 0.20 |
+
+build: unknown (0)
+───────── ngl = 58 ─────────
+58	../sysdeps/nptl/libc_start_call_main.h: No such file or directory.
+#13 0x000079aa7fa29e40 in __libc_start_main_impl (main=0x56e500cc8260 <main>, argc=13, argv=0x7ffe89bf0268, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7ffe89bf0258) at ../csu/libc-start.c:392
+392	../csu/libc-start.c: No such file or directory.
+#14 0x000056e500cc8295 in _start ()
+[Inferior 1 (process 30919) detached]
+───────── ngl = 60 ─────────
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 7705 MiB):
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to create context with model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+───────── ngl = 62 ─────────
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 7705 MiB):
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to load model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+───────── ngl = 64 ─────────
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 7705 MiB):
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to load model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |
+───────── ngl = 65 ─────────
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 7705 MiB):
+  Device 0: NVIDIA GeForce RTX 5070 Laptop GPU, compute capability 12.0, VMM: yes, VRAM: 7705 MiB
+llama_bench: error: failed to load model 'models/Qwen3.8-27B-UD-IQ2_XXS.gguf'
+| model                          |       size |     params | backend    | ngl |  fa |            test |                  t/s |
+| ------------------------------ | ---------: | ---------: | ---------- | --: | --: | --------------: | -------------------: |

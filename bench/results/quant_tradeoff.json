@@ -1,0 +1,205 @@
+{
+  "model": null,
+  "reps": 5,
+  "discard": 2,
+  "tokens": 256,
+  "prompt": "Write a Python function that performs binary search on a sorted list, then explain step by step how it works, why its complexity is O(log n), and what happens when the target value is absent from the list.",
+  "results": [
+    {
+      "name": "iq2-ngl52",
+      "flags": "-m models/Qwen3.8-27B-UD-IQ2_XXS.gguf -ngl 52 -fa on -c 4096",
+      "ok": true,
+      "error": "",
+      "load_s": 7.0,
+      "decode_tps": [
+        12.552745529118162,
+        10.165832636508695,
+        9.386198217586724,
+        9.584255661335252,
+        9.630055925700077
+      ],
+      "prefill_tps": [
+        70.74334806878885,
+        67.81553543519436,
+        55.29821168155432,
+        55.30546623794212,
+        53.33981680874078
+      ],
+      "decode_median": 9.584,
+      "decode_peak": 12.553,
+      "boost_drop_pct": 30.97,
+      "spread_pct": 1.27,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1837,
+        1537,
+        1537,
+        1530,
+        1530
+      ],
+      "temps": [
+        72,
+        74,
+        74,
+        76,
+        76
+      ],
+      "vram_mib": [
+        7550,
+        7550,
+        7550,
+        7550,
+        7550
+      ]
+    },
+    {
+      "name": "q3-ngl30",
+      "flags": "-m models/Qwen3.8-27B-UD-Q3_K_XL.gguf -ngl 30 -fa on -c 4096",
+      "ok": true,
+      "error": "",
+      "load_s": 7.0,
+      "decode_tps": [
+        4.523432765362838,
+        4.467194787193614,
+        4.480640759039521,
+        4.4755813859201155,
+        4.459829398408366
+      ],
+      "prefill_tps": [
+        27.103396938072517,
+        27.762623115934776,
+        27.567230384473106,
+        27.431061913820535,
+        27.737246994379014
+      ],
+      "decode_median": 4.476,
+      "decode_peak": 4.523,
+      "boost_drop_pct": 1.07,
+      "spread_pct": 0.23,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1792,
+        1822,
+        1807,
+        1890,
+        1905
+      ],
+      "temps": [
+        74,
+        75,
+        75,
+        75,
+        75
+      ],
+      "vram_mib": [
+        6574,
+        6574,
+        6574,
+        6574,
+        6574
+      ]
+    },
+    {
+      "name": "q3-ngl32",
+      "flags": "-m models/Qwen3.8-27B-UD-Q3_K_XL.gguf -ngl 32 -fa on -c 4096",
+      "ok": true,
+      "error": "",
+      "load_s": 4.0,
+      "decode_tps": [
+        4.961933795194022,
+        4.699748979956345,
+        4.647078532073544,
+        4.609210109179896,
+        4.592978031840109
+      ],
+      "prefill_tps": [
+        29.363782437590014,
+        27.84972289525719,
+        28.898995323067247,
+        28.49099121483599,
+        28.629486506856427
+      ],
+      "decode_median": 4.609,
+      "decode_peak": 4.962,
+      "boost_drop_pct": 7.65,
+      "spread_pct": 0.59,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1875,
+        1860,
+        1815,
+        1800,
+        1845
+      ],
+      "temps": [
+        74,
+        76,
+        80,
+        76,
+        76
+      ],
+      "vram_mib": [
+        6956,
+        6956,
+        6956,
+        6956,
+        6956
+      ]
+    },
+    {
+      "name": "q3-ngl34",
+      "flags": "-m models/Qwen3.8-27B-UD-Q3_K_XL.gguf -ngl 34 -fa on -c 4096",
+      "ok": true,
+      "error": "",
+      "load_s": 4.0,
+      "decode_tps": [
+        5.172293455971725,
+        4.96056525699463,
+        4.876387217424835,
+        4.85943975233246,
+        4.846687122093827
+      ],
+      "prefill_tps": [
+        32.98934904342396,
+        29.543355905373318,
+        28.78445264689777,
+        28.314640183478872,
+        28.757117386553176
+      ],
+      "decode_median": 4.859,
+      "decode_peak": 5.172,
+      "boost_drop_pct": 6.44,
+      "spread_pct": 0.31,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1815,
+        1815,
+        1905,
+        1852,
+        1860
+      ],
+      "temps": [
+        74,
+        76,
+        79,
+        81,
+        76
+      ],
+      "vram_mib": [
+        7334,
+        7334,
+        7334,
+        7334,
+        7334
+      ]
+    }
+  ]
+}

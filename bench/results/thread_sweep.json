@@ -1,0 +1,254 @@
+{
+  "model": null,
+  "reps": 5,
+  "discard": 2,
+  "tokens": 256,
+  "prompt": "Write a Python function that performs binary search on a sorted list, then explain step by step how it works, why its complexity is O(log n), and what happens when the target value is absent from the list.",
+  "results": [
+    {
+      "name": "t-default",
+      "flags": "-m models/Qwen3.8-27B-UD-IQ2_XXS.gguf -ngl 52 -fa on -c 4096",
+      "ok": true,
+      "error": "",
+      "load_s": 6.0,
+      "decode_tps": [
+        11.655669047744636,
+        10.175407667732319,
+        10.010268965720561,
+        9.99099008596013,
+        9.980798118631297
+      ],
+      "prefill_tps": [
+        66.2856015341263,
+        56.68299048912148,
+        56.4520046369414,
+        58.59907331698011,
+        56.943686666701986
+      ],
+      "decode_median": 9.991,
+      "decode_peak": 11.656,
+      "boost_drop_pct": 16.66,
+      "spread_pct": 0.15,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1537,
+        1537,
+        1537,
+        1537,
+        1537
+      ],
+      "temps": [
+        71,
+        72,
+        75,
+        75,
+        76
+      ],
+      "vram_mib": [
+        7550,
+        7550,
+        7550,
+        7550,
+        7550
+      ]
+    },
+    {
+      "name": "t4",
+      "flags": "-m models/Qwen3.8-27B-UD-IQ2_XXS.gguf -ngl 52 -fa on -c 4096 -t 4",
+      "ok": true,
+      "error": "",
+      "load_s": 3.1,
+      "decode_tps": [
+        8.225833782609019,
+        7.977113005847506,
+        7.648086525232252,
+        7.558151528667268,
+        7.675682603721574
+      ],
+      "prefill_tps": [
+        53.49263356675196,
+        52.70014719273669,
+        53.42391378622732,
+        50.73866049936282,
+        50.836376619522824
+      ],
+      "decode_median": 7.648,
+      "decode_peak": 8.226,
+      "boost_drop_pct": 7.55,
+      "spread_pct": 0.77,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1785,
+        1777,
+        1807,
+        1762,
+        1882
+      ],
+      "temps": [
+        71,
+        72,
+        73,
+        73,
+        76
+      ],
+      "vram_mib": [
+        7482,
+        7482,
+        7482,
+        7482,
+        7482
+      ]
+    },
+    {
+      "name": "t8-pinned",
+      "flags": "-m models/Qwen3.8-27B-UD-IQ2_XXS.gguf -ngl 52 -fa on -c 4096 -t 8 -C 5555 --cpu-strict 1",
+      "ok": true,
+      "error": "",
+      "load_s": 3.1,
+      "decode_tps": [
+        12.744136422831854,
+        10.163444934335775,
+        9.978699975749802,
+        9.996114451512025,
+        9.988506949709356
+      ],
+      "prefill_tps": [
+        70.23630432900644,
+        66.99259342350848,
+        56.72172191318411,
+        57.589028620407944,
+        56.57343890200165
+      ],
+      "decode_median": 9.989,
+      "decode_peak": 12.744,
+      "boost_drop_pct": 27.59,
+      "spread_pct": 0.09,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1860,
+        1537,
+        1530,
+        1537,
+        1530
+      ],
+      "temps": [
+        75,
+        72,
+        75,
+        75,
+        76
+      ],
+      "vram_mib": [
+        7550,
+        7550,
+        7550,
+        7550,
+        7550
+      ]
+    },
+    {
+      "name": "t16-ht",
+      "flags": "-m models/Qwen3.8-27B-UD-IQ2_XXS.gguf -ngl 52 -fa on -c 4096 -t 16",
+      "ok": true,
+      "error": "",
+      "load_s": 3.0,
+      "decode_tps": [
+        12.843864891204657,
+        12.742924491176273,
+        13.043150680972666,
+        11.930051720750892,
+        12.334060333483004
+      ],
+      "prefill_tps": [
+        60.023339307749424,
+        75.18718111018245,
+        62.6672340723209,
+        62.677556041752,
+        74.09743295474715
+      ],
+      "decode_median": 12.334,
+      "decode_peak": 13.043,
+      "boost_drop_pct": 5.75,
+      "spread_pct": 4.51,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1912,
+        1530,
+        1530,
+        1807,
+        1530
+      ],
+      "temps": [
+        74,
+        77,
+        79,
+        80,
+        80
+      ],
+      "vram_mib": [
+        7550,
+        7550,
+        7550,
+        7550,
+        7550
+      ]
+    },
+    {
+      "name": "t24-all",
+      "flags": "-m models/Qwen3.8-27B-UD-IQ2_XXS.gguf -ngl 52 -fa on -c 4096 -t 24",
+      "ok": true,
+      "error": "",
+      "load_s": 3.0,
+      "decode_tps": [
+        8.716907755255074,
+        6.97657735899831,
+        7.992929861727016,
+        8.216713730176975,
+        11.04365387473742
+      ],
+      "prefill_tps": [
+        69.81641530051097,
+        58.80108686287997,
+        56.8827461402411,
+        52.7914394383973,
+        51.5941389058203
+      ],
+      "decode_median": 8.217,
+      "decode_peak": 11.044,
+      "boost_drop_pct": 34.4,
+      "spread_pct": 18.56,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1537,
+        1530,
+        1530,
+        1530,
+        1530
+      ],
+      "temps": [
+        74,
+        77,
+        78,
+        77,
+        79
+      ],
+      "vram_mib": [
+        7550,
+        7550,
+        7550,
+        7550,
+        7550
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "model": "models/Qwen3.8-27B-UD-IQ2_XXS.gguf",
+  "reps": 6,
+  "discard": 2,
+  "tokens": 256,
+  "prompt": "Write a Python function that performs binary search on a sorted list, then explain step by step how it works, why its complexity is O(log n), and what happens when the target value is absent from the list.",
+  "results": [
+    {
+      "name": "fit-base",
+      "flags": "-fa on -c 4096 -fitt 256",
+      "ok": true,
+      "error": "",
+      "load_s": 5.0,
+      "decode_tps": [
+        9.567619393947215,
+        8.465671701251425,
+        8.369077224560622,
+        8.263036227710744,
+        8.2302452086982,
+        8.12665263847075
+      ],
+      "prefill_tps": [
+        55.34946105071299,
+        47.11177432802724,
+        54.20368484212862,
+        54.010668991218864,
+        51.41535716933349,
+        52.46045640597073
+      ],
+      "decode_median": 8.247,
+      "decode_peak": 9.568,
+      "boost_drop_pct": 16.02,
+      "spread_pct": 1.47,
+      "draft_n": 0,
+      "draft_accepted": 0,
+      "acceptance": null,
+      "clocks": [
+        1537,
+        1785,
+        1830,
+        1710,
+        1807,
+        1852
+      ],
+      "temps": [
+        71,
+        72,
+        74,
+        74,
+        78,
+        77
+      ],
+      "vram_mib": [
+        6908,
+        6908,
+        6908,
+        6908,
+        6908,
+        6908
+      ]
+    },
+    {
+      "name": "fit-mtp1",
+      "flags": "-fa on -c 4096 -fitt 256 --spec-type draft-mtp --spec-draft-n-max 1",
+      "ok": true,
+      "error": "",
+      "load_s": 6.0,
+      "decode_tps": [
+        7.110629459689201,
+        6.791715555921096,
+        6.746660541933578,
+        6.680492404162245,
+        6.639611076058594,
+        6.619524747716284
+      ],
+      "prefill_tps": [
+        43.259252701439735,
+        43.357569878790386,
+        44.036126008862524,
+        41.52535171007193,
+        41.50871634777354,
+        42.8106058795887
+      ],
+      "decode_median": 6.66,
+      "decode_peak": 7.111,
+      "boost_drop_pct": 6.77,
+      "spread_pct": 0.95,
+      "draft_n": 774,
+      "draft_accepted": 756,
+      "acceptance": 0.9767441860465116,
+      "clocks": [
+        1777,
+        1785,
+        1770,
+        1777,
+        1785,
+        1762
+      ],
+      "temps": [
+        71,
+        72,
+        73,
+        73,
+        74,
+        74
+      ],
+      "vram_mib": [
+        6208,
+        6208,
+        6208,
+        6208,
+        6208,
+        6208
+      ]
+    },
+    {
+      "name": "fit-mtp2",
+      "flags": "-fa on -c 4096 -fitt 256 --spec-type draft-mtp --spec-draft-n-max 2",
+      "ok": true,
+      "error": "",
+      "load_s": 7.0,
+      "decode_tps": [
+        6.191462754685214,
+        5.786779374066542,
+        5.713425723684348,
+        5.621171651448208,
+        5.648599307969055,
+        5.657075284091665
+      ],
+      "prefill_tps": [
+        37.23240292733274,
+        35.805345488276664,
+        35.55249822444209,
+        36.63690273328335,
+        35.404729577852116,
+        34.57700661224942
+      ],
+      "decode_median": 5.653,
+      "decode_peak": 6.191,
+      "boost_drop_pct": 9.53,
+      "spread_pct": 0.82,
+      "draft_n": 1084,
+      "draft_accepted": 985,
+      "acceptance": 0.9086715867158671,
+      "clocks": [
+        1762,
+        1650,
+        1657,
+        1657,
+        1740,
+        1732
+      ],
+      "temps": [
+        70,
+        72,
+        73,
+        74,
+        73,
+        73
+      ],
+      "vram_mib": [
+        5634,
+        5634,
+        5634,
+        5634,
+        5634,
+        5634
+      ]
+    },
+    {
+      "name": "fit-mtp3",
+      "flags": "-fa on -c 4096 -fitt 256 --spec-type draft-mtp --spec-draft-n-max 3",
+      "ok": true,
+      "error": "",
+      "load_s": 8.0,
+      "decode_tps": [
+        5.061830758978844,
+        4.850381702214639,
+        4.750962908394169,
+        4.718775331611936,
+        4.6844977019783185,
+        4.472505744495147
+      ],
+      "prefill_tps": [
+        32.33136187215126,
+        30.93798947676665,
+        31.152016042563798,
+        30.3846770780116,
+        29.718051712174447,
+        29.24489676551442
+      ],
+      "decode_median": 4.702,
+      "decode_peak": 5.062,
+      "boost_drop_pct": 7.66,
+      "spread_pct": 2.96,
+      "draft_n": 1296,
+      "draft_accepted": 1092,
+      "acceptance": 0.8425925925925926,
+      "clocks": [
+        1777,
+        1717,
+        1642,
+        1702,
+        1755,
+        1777
+      ],
+      "temps": [
+        71,
+        73,
+        78,
+        73,
+        73,
+        73
+      ],
+      "vram_mib": [
+        4962,
+        4962,
+        4962,
+        4962,
+        4962,
+        4962
+      ]
+    }
+  ]
+}
