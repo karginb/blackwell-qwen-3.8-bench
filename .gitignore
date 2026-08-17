@@ -1,0 +1,24 @@
+# Model weights - gigabytes, never committed
+models/
+*.gguf
+*.safetensors
+
+# llama.cpp source tree - cloned from upstream, not vendored here
+llama.cpp/
+
+# Raw benchmark logs - noisy, only summaries are kept
+bench/results/raw/
+
+# Evaluation corpora - downloadable, regenerate with bench/prepare_corpus.py
+bench/data/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Editors
+.vscode/
+.idea/
+*.swp
